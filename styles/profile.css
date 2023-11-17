@@ -1,0 +1,114 @@
+.body{
+    height: 800px;
+    width: 100% ;
+
+    padding: 0;
+    /* padding-top: 50px; */
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.title-text{
+    color:#fff ;
+    font: 500;
+    font-size: 4rem;
+}
+.container {
+    width: 40%;
+    height: 500px ;
+    background-color: rgb(181, 217, 217);
+    margin-left: 30% ;
+    border-radius: 8px; /* Độ cong của viền */
+    overflow: hidden; /* Loại bỏ các góc vuông */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Thêm độ bóng */
+    /* margin-top: 50px; */
+}
+.box{
+    display: flex;
+}
+.box1 {
+    width: 30% ;
+    /* background-color: antiquewhite; */
+}
+.box1 img {
+    max-width: 100% ;
+    max-height: 100%  ;
+    display: block;
+    width: auto;
+    height: auto;
+}
+.box2 {
+    width: 70% ;
+    /* background-color: aqua; */
+}
+.img{
+    height: 210px;
+    width: 80%;
+    border-radius: 3px;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.infor{
+    list-style: none;
+    /* text-align: center; */
+}
+.text{
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:#363232 ;
+}
+
+.button {
+    margin-left: 20px;
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    /* box-shadow: 0 9px #999; */
+}
+.button.b1{
+    background-color: purple;
+
+}
+.button.b1:hover {
+    background-color: #58257b ;
+}
+.button.b2{
+    background-color: rgb(48, 170, 168);
+}
+.button.b2:hover {
+    background-color: #2d9281 ;
+}
+.button.b3{
+    background-color: rgb(121, 209, 58);
+}
+.button.b3:hover {
+    background-color: #6bb736 ;
+}
+.button.b4{
+    background-color: rgb(69, 214, 93);
+}
+.button.b4:hover {
+    background-color: #3eb56e ;
+}
+.button:active {
+    background-color: #58257b;  box-shadow: 0 5px #666;  transform: translateY(4px);
+}
+
+.profile {
+    text-decoration: none ;
+    color: #3dd840;
+    font-size: 1.3rem;
+    font-weight: 400;
+}

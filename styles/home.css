@@ -1,0 +1,48 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    position: relative;
+    /* background-image: url(../images/background.jpg); */
+    background-size: 2110px;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.menu-bar{
+    height: 75px;
+    background: rgb(0, 100, 0);
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    line-height: 15px;
+    
+}
+
+.menu-bar ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.iot-video{
+    position: absolute;
+    width: 510px;
+    height: 295px;
+    top: 145px;
+    right: 440px;
+}

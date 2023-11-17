@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divided Interface</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="menu-bar" style="background-color: #486877">
+    <ul>
+    
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="data.html">Data History</a></li>
+        <li><a href="action.html">Action History</a></li>
+        <li><a href="profile.html">Information</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="mg-content" id="background-temp">
+          <span class="cell">
+            <input type="hidden" id="numberInputTemp" value="40">
+            <p class="temp-article"><i><b>Temperature</b></i></p>
+            <p id="numberTemp">0</p>
+          </span>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mg-content" id="background-hum">
+          <span class="cell">
+            <input type="hidden" id="numberInputHum" value="80">
+            <p class="hum-article"><i><b>Humidity</b></i></p>
+            <p id="numberHum">0</p>
+          </span>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mg-content" id="background-light">
+          <span class="cell light-pos">
+            <input type="hidden" id="numberInputLight" value="100">
+            <p class="light-article"><i><b>Light</b></i></p>
+            <p id="numberLight">0</p>
+          </span>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="mg-content" id="background-gas">
+          <span class="cell light-pos">
+            <input type="hidden" id="numberInputGas" value="100">
+            <p class="gas-article"><i><b>Gas</b></i></p>
+            <p id="numberGas">0</p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- <div class="col-8"> -->
+        <div class="col-4">
+          <div class="mg-content">
+
+            <div id="dashboard1"></div>
+  
+          </div>
+
+          
+        </div>
+
+        <div class="col-4">
+          <div class="mg-content">
+            <div class="dashboard-container">
+              <div id="dashboard2"></div>
+            </div>
+            
+  
+          </div>
+
+          
+        </div>
+
+
+      <!-- </div> -->
+
+      <div class="col-4">
+        <div class="mg-content">
+          <div class="row" style="background-color: #fff">
+            
+            <div class="col-6">
+              <div class="switch">
+                <label class="sensor-1">
+                  <input type="checkbox" id="led1">
+                  <span>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                  </span>
+                  <div class="bulb">
+                    
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="switch">
+                <label class="sensor-1">
+                  <input type="checkbox" id = "led3">
+                  <span>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                  </span>
+                  <div class="bulb-3">
+                    
+                  </div>
+                  
+                </label>
+              </div>
+            </div>
+
+  
+            <div class="col-12">
+              <div class="switch">
+                <label class="sensor-1">
+                  <input type="checkbox" id = "led2">
+                  <span>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                  </span>
+                  <div class="fan">
+                    
+                  </div>
+
+                  
+                </label>
+              </div>
+            </div>
+
+
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="dashboard.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+</body>
+
+</html>
